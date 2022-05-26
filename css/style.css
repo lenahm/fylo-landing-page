@@ -7,6 +7,7 @@
     --moderate-cyan: hsl(170, 45%, 43%); 
     --light-grayish-blue: hsl(240, 75%, 98%); 
     --light-gray: hsl(0, 0%, 75%); 
+    --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* main styling */
@@ -22,9 +23,32 @@ body {
     font-size: 14px;
 }
 
+h1,
+h2,
+header #navbar nav #nav-menu,
+header #content > div #header-content-form #header-content-form-input,
+header #content > div #header-content-form #header-content-form-submit,
+main #early-access #early-access-form #early-access-form-input,
+main #early-access #early-access-form #early-access-form-submit {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
 header #content > img,
 main #stay-productive > img {
     width: 500px;
+}
+
+header #content > img,
+main #stay-productive > img {
+    justify-self: center;
 }
 
 header #content,
@@ -33,29 +57,193 @@ main #early-access {
     grid-template-columns: repeat(2, 1fr);
 }
 
+header p, 
+main p {
+    margin: 10px 0;
+    line-height: 1.5rem;
+}
+
 /* header */
+
+header {
+    padding: 50px;
+}
 
 header #navbar {
     justify-content: space-between;
     align-items: center;
 }
 
+header #navbar nav #nav-menu {
+    gap: 40px; 
+}
+
+header #navbar nav #nav-menu .nav-item .nav-link {
+    color: black;
+}
+
+header #navbar nav #nav-menu .nav-item .nav-link:hover {
+    border-bottom: 1px solid black;
+}
+
+header #content {
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin: 70px 0 150px 0;
+}
+
+header #content > div #header-content-form #header-content-form-input {
+    width: 250px;
+    padding: 10px;
+}
+
+header #content > div #header-content-form #header-content-form-submit {
+    margin-left: 10px;
+}
+
+header > img {
+    position: absolute;
+    width: 100vw;
+    bottom: -30px; 
+    left: 0;
+    z-index: -1;
+}
+
 /* stay-productive */
 
+main #stay-productive {
+    gap: 100px;
+    padding: 80px 50px;
+    background-color: var(--light-grayish-blue);
+}
+
+main #stay-productive h1 {
+    font-size: 28px;
+}
+
+main #stay-productive > div > a {
+    color: var(--moderate-cyan); 
+    text-decoration: none;
+    border-bottom: 1px solid var(--moderate-cyan);
+}
+
+main #stay-productive > div #testimonial {
+    width: 300px;
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 0.8rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+}
+
+main #stay-productive > div #testimonial #testimonial-profile > img {
+    width: 30px; 
+    height: 30px;
+    border-radius: 50%;
+}
+
+main #stay-productive > div #testimonial #testimonial-profile #name-and-position p {
+    margin: 0 0 0 10px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1rem;
+}
+
+main #stay-productive > div #testimonial #testimonial-profile #name-and-position p:nth-child(1) {
+    font-weight: 700;
+}
+
+main #stay-productive > div #testimonial #testimonial-profile #name-and-position p:nth-child(2) {
+    font-size: 0.6rem
+}
+
 /* early-access */
+
+main #early-access {
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    padding: 80px 50px;
+    color: #fff;
+    background-color: var(--desaturated-blue);
+}
+
+main #early-access #early-access-form {
+    flex-direction: column;
+}
+
+main #early-access #early-access-form #early-access-form-input {
+    width: 400px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+main #early-access #early-access-form #early-access-form-submit {
+    width: 200px;
+}
 
 /* footer */
 
 footer {
     flex-direction: column;
+    padding: 50px;
+    color: #fff;
+    background-color: var(--very-dark-blue);
 }
 
 footer #footer-infos {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 30px;
 }
 
 footer #footer-infos #phone-and-mail {
     flex-direction: column;
+    gap: 10px;
+}
+
+footer #footer-infos #phone-and-mail i {
+    margin-right: 20px;
+    font-size: 1rem;
+}
+
+footer #footer-infos #phone-and-mail #phone,
+footer #footer-infos #phone-and-mail #mail {
+    align-items: center;
+}
+
+footer #footer-infos #footer-menu-left,
+footer #footer-infos #footer-menu-right {
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer #footer-infos #footer-menu-left .nav-item .nav-link,
+footer #footer-infos #footer-menu-right .nav-item .nav-link {
+    color: #fff;
+}
+
+footer #footer-infos #footer-menu-left .nav-item .nav-link:hover,
+footer #footer-infos #footer-menu-right .nav-item .nav-link:hover {
+    color: var(--bright-blue);
+}
+
+footer #socialmedia {
+    align-items: flex-start;
+    gap: 20px;
+}
+
+footer #socialmedia a {
+    padding: 5px;
+    font-size: 0.5rem;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+footer #socialmedia a:hover {
+    color: var(--bright-blue);
+    border: 1px solid var(--bright-blue);
 }
 
 /* utility classes */
@@ -68,6 +256,29 @@ footer #footer-infos #phone-and-mail {
     display: grid; 
 }
 
-.btn {
+.nav-item {
+    list-style-type: none;
+}
 
+.nav-link {
+    text-decoration: none;
+}
+
+input[type='text']:focus {
+    outline: none;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 12px 40px;
+    background-color: var(--bright-blue); 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+}
+
+.btn:hover,
+main #stay-productive > div > a:hover {
+    opacity: 0.7;
 }
