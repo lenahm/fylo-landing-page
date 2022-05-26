@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+:root {
+    --very-dark-blue: hsl(243, 87%, 12%); 
+    --desaturated-blue: hsl(238, 22%, 44%); 
+    --bright-blue: hsl(224, 93%, 58%);
+    --moderate-cyan: hsl(170, 45%, 43%); 
+    --light-grayish-blue: hsl(240, 75%, 98%); 
+    --light-gray: hsl(0, 0%, 75%); 
+}
+
+/* main styling */
+
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+header #content > img,
+main #stay-productive > img {
+    width: 500px;
+}
+
+header #content,
+main #stay-productive,
+main #early-access {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* header */
+
+header #navbar {
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* stay-productive */
+
+/* early-access */
+
+/* footer */
+
+footer {
+    flex-direction: column;
+}
+
+footer #footer-infos {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+footer #footer-infos #phone-and-mail {
+    flex-direction: column;
+}
+
+/* utility classes */
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid; 
+}
+
+.btn {
+
+}
