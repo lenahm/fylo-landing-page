@@ -8,6 +8,8 @@
     --light-grayish-blue: hsl(240, 75%, 98%); 
     --light-gray: hsl(0, 0%, 75%); 
     --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --error: hsl(0, 100%, 63%); 
+    --success: hsl(132, 57%, 57%); 
 }
 
 /* main styling */
@@ -281,4 +283,20 @@ input[type='text']:focus {
 .btn:hover,
 main #stay-productive > div > a:hover {
     opacity: 0.7;
+}
+
+.alert {
+    margin: 10px 10px 20px 10px;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 0.7rem;
+}
+
+.error {
+    color: var(--error);
+}
+
+.success {
+    color: var(--success);
 }
