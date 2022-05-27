@@ -1,0 +1,75 @@
+/* main styling */
+
+body {
+    text-align: center;
+}
+
+header #content > img,
+main #stay-productive > img {
+    width: 300px;
+    order: 1;
+}
+
+header #content #header-content-info,
+main #stay-productive > div {
+    order: 2;
+}
+
+header #content,
+main #stay-productive,
+main #early-access {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+/* header */
+
+header #content {
+    margin: 50px 0;
+}
+
+header > img {
+    display: none;
+}
+
+/* stay-productive */
+
+main #stay-productive > div p {
+    text-align: left;
+}
+
+main #stay-productive > div #testimonial {
+    margin: 50px auto 0 auto;
+}
+
+/* early-access */
+
+main #early-access {
+    gap: 0;
+}
+
+main #early-access #early-access-form {
+    justify-content: center;
+    align-items: center;
+}
+
+/* footer */ 
+
+footer .logo {
+    text-align: left;
+}
+
+footer #footer-infos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+footer #footer-infos #footer-menu-left,
+footer #footer-infos #footer-menu-right {
+    text-align: left;
+}
+
+/* utility classes */
+
+.alert {
+    text-align: center;
+}

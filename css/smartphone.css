@@ -1,0 +1,41 @@
+/* header */
+
+header #navbar {
+    flex-direction: column;
+}
+
+header #navbar .logo {
+    margin-bottom: 20px;
+}
+
+header #content {
+    gap: 70px;
+}
+
+header #content #header-content-info #header-content-form #header-content-form-input,
+header #content #header-content-info #header-content-form #header-content-form-submit {
+    display: block;
+    width: 100%;
+}
+
+header #content #header-content-info #header-content-form #header-content-form-submit {
+    margin: 10px 0 0 0; 
+}
+
+header > img {
+    display: none;
+}
+
+/* stay-productive */
+
+main #stay-productive {
+    gap: 70px;
+}
+
+/* early-access */
+
+main #early-access #early-access-form #early-access-form-input,
+main #early-access #early-access-form #early-access-form-submit {
+    display: block;
+    width: 100%;
+}
